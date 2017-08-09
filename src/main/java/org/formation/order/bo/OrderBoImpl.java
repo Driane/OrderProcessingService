@@ -17,7 +17,7 @@ public class OrderBoImpl implements OrderBo {
 	public Boolean placeOrder(Order order) throws BOException {
 		try {
 			int result = dao.create(order);
-			System.out.println("Coucou Morray");
+			System.out.println("Coucou Josiane");
 			System.out.println("Coucou Cyril");
 			if (result == 0) {
 				return false;
