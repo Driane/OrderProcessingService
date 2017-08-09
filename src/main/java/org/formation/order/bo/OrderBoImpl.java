@@ -18,6 +18,8 @@ public class OrderBoImpl implements OrderBo {
 		try {
 			int result = dao.create(order);
 			System.out.println("Du caca !");
+			System.out.println("Coucou Josiane");
+			System.out.println("Coucou Cyril");
 			if (result == 0) {
 				return false;
 			}
