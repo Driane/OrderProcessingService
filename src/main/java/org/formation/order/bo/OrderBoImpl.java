@@ -18,6 +18,7 @@ public class OrderBoImpl implements OrderBo {
 		try {
 			int result = dao.create(order);
 			System.out.println("Coucou Morray");
+			System.out.println("Coucou Cyril");
 			if (result == 0) {
 				return false;
 			}
@@ -30,6 +31,7 @@ public class OrderBoImpl implements OrderBo {
 	public Boolean cancelOrder(int id) throws BOException{
 		try{Order order = dao.read(id);
 		order.setStatus("cancelled");
+		System.out.println("La superbe phrase de Jean");
 		int result = dao.update(order);
 		if(result == 0) {
 			return false;
