@@ -30,6 +30,7 @@ public class OrderBoImpl implements OrderBo {
 	public Boolean cancelOrder(int id) throws BOException{
 		try{Order order = dao.read(id);
 		order.setStatus("cancelled");
+		System.out.println("La superbe phrase de Jean");
 		int result = dao.update(order);
 		if(result == 0) {
 			return false;
